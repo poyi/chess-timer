@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		AA22E4691AB13C38008A3C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA22E4681AB13C38008A3C6F /* AppDelegate.swift */; };
 		AA22E46B1AB13C38008A3C6F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA22E46A1AB13C38008A3C6F /* MasterViewController.swift */; };
-		AA22E46D1AB13C38008A3C6F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA22E46C1AB13C38008A3C6F /* DetailViewController.swift */; };
 		AA22E4701AB13C38008A3C6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA22E46E1AB13C38008A3C6F /* Main.storyboard */; };
 		AA22E4721AB13C38008A3C6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA22E4711AB13C38008A3C6F /* Images.xcassets */; };
 		AA22E4751AB13C38008A3C6F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA22E4731AB13C38008A3C6F /* LaunchScreen.xib */; };
 		AA22E4811AB13C39008A3C6F /* Chess_timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA22E4801AB13C39008A3C6F /* Chess_timerTests.swift */; };
+		AADEB6001ABBDD0700EFB5A3 /* black-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = AADEB5FE1ABBDD0700EFB5A3 /* black-pause.png */; };
+		AADEB6011ABBDD0700EFB5A3 /* white-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = AADEB5FF1ABBDD0700EFB5A3 /* white-pause.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		AA22E4671AB13C38008A3C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA22E4681AB13C38008A3C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA22E46A1AB13C38008A3C6F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		AA22E46C1AB13C38008A3C6F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AA22E46F1AB13C38008A3C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA22E4711AB13C38008A3C6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA22E4741AB13C38008A3C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AA22E47A1AB13C39008A3C6F /* Chess timerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chess timerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA22E47F1AB13C39008A3C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA22E4801AB13C39008A3C6F /* Chess_timerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_timerTests.swift; sourceTree = "<group>"; };
+		AADEB5FE1ABBDD0700EFB5A3 /* black-pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-pause.png"; sourceTree = "<group>"; };
+		AADEB5FF1ABBDD0700EFB5A3 /* white-pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-pause.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +83,10 @@
 			children = (
 				AA22E4681AB13C38008A3C6F /* AppDelegate.swift */,
 				AA22E46A1AB13C38008A3C6F /* MasterViewController.swift */,
-				AA22E46C1AB13C38008A3C6F /* DetailViewController.swift */,
 				AA22E46E1AB13C38008A3C6F /* Main.storyboard */,
 				AA22E4711AB13C38008A3C6F /* Images.xcassets */,
+				AADEB5FE1ABBDD0700EFB5A3 /* black-pause.png */,
+				AADEB5FF1ABBDD0700EFB5A3 /* white-pause.png */,
 				AA22E4731AB13C38008A3C6F /* LaunchScreen.xib */,
 				AA22E4661AB13C38008A3C6F /* Supporting Files */,
 			);
@@ -195,8 +198,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADEB6011ABBDD0700EFB5A3 /* white-pause.png in Resources */,
 				AA22E4701AB13C38008A3C6F /* Main.storyboard in Resources */,
 				AA22E4751AB13C38008A3C6F /* LaunchScreen.xib in Resources */,
+				AADEB6001ABBDD0700EFB5A3 /* black-pause.png in Resources */,
 				AA22E4721AB13C38008A3C6F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA22E46D1AB13C38008A3C6F /* DetailViewController.swift in Sources */,
 				AA22E46B1AB13C38008A3C6F /* MasterViewController.swift in Sources */,
 				AA22E4691AB13C38008A3C6F /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				AA22E4861AB13C39008A3C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA22E4871AB13C39008A3C6F /* Build configuration list for PBXNativeTarget "Chess timerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				AA22E4891AB13C39008A3C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
