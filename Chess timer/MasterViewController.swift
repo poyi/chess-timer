@@ -262,7 +262,7 @@ class MasterViewController: UIViewController {
         self.timer?.invalidate()
         let optionMenu = UIAlertController(title: nil, message: "Game Paused", preferredStyle: .ActionSheet)
         
-        let reset10 = UIAlertAction(title: "New 10 Minute Game", style: .Default, handler: {
+        let reset10 = UIAlertAction(title: "New 10 Minutes Game", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
             
             self.StartButton.hidden = false
@@ -296,7 +296,7 @@ class MasterViewController: UIViewController {
             
             println("10 min game restarted")
         })
-        let reset5 = UIAlertAction(title: "New 5 Minute Game", style: .Default, handler: {
+        let reset5 = UIAlertAction(title: "New 5 Minutes Game", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
   
             self.StartButton.hidden = false
