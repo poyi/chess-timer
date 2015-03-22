@@ -167,6 +167,7 @@
 				TargetAttributes = {
 					AA22E4621AB13C38008A3C6F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 3B2537D9LX;
 					};
 					AA22E4791AB13C39008A3C6F = {
 						CreatedOnToolsVersion = 6.2;

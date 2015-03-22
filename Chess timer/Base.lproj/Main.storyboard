@@ -213,8 +213,8 @@
                                     <action selector="showActionSheet:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="X0X-Y6-4SJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="luU-8i-1AS">
-                                <rect key="frame" x="20" y="529" width="15" height="15"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="luU-8i-1AS">
+                                <rect key="frame" x="22" y="529" width="15" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="black-pause.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
