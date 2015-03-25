@@ -332,9 +332,12 @@ class MasterViewController: UIViewController {
         let cancelAction = UIAlertAction(title: "Resume", style: .Cancel, handler: {
             (alert: UIAlertAction!) -> Void in
             println("Game Resumed")
-            self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("WhiteCountdown:"), userInfo: nil, repeats: true)
-
-        })
+            if self.WhiteEndTurnButton.hidden {
+                self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("BlackCountdown:"), userInfo: nil, repeats: true)
+            } else {
+                self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("WhiteCountdown:"), userInfo: nil, repeats: true)
+            }
+                   })
         
         optionMenu.addAction(reset10)
         optionMenu.addAction(reset5)

@@ -185,7 +185,7 @@
                                     <constraint firstAttribute="height" constant="75" id="aQz-UI-hbc"/>
                                 </constraints>
                             </view>
-                            <view userInteractionEnabled="NO" contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4F-ma-EsY" userLabel="White main timer">
+                            <view userInteractionEnabled="NO" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4F-ma-EsY" userLabel="White main timer">
                                 <rect key="frame" x="64" y="200" width="182" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="White Minute Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-jZ-hg3">
@@ -271,14 +271,14 @@
                         <constraints>
                             <constraint firstItem="GnP-Zo-tf9" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" constant="10" id="0DO-bv-U4W"/>
                             <constraint firstItem="Xh8-6s-Yms" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" id="3pE-kM-ANe"/>
-                            <constraint firstItem="u4e-st-Szd" firstAttribute="top" secondItem="O4z-Z7-dmj" secondAttribute="bottom" constant="-10" id="8lC-N5-S4c"/>
+                            <constraint firstItem="u4e-st-Szd" firstAttribute="top" secondItem="O4z-Z7-dmj" secondAttribute="bottom" constant="-8" id="8lC-N5-S4c"/>
                             <constraint firstItem="6dV-xY-4Hl" firstAttribute="leading" secondItem="udC-M9-PpW" secondAttribute="leadingMargin" constant="-20" id="9N7-BX-kuh"/>
-                            <constraint firstItem="u4e-st-Szd" firstAttribute="top" secondItem="zmY-5M-MWy" secondAttribute="bottom" constant="10" id="B8D-RF-foI"/>
+                            <constraint firstItem="u4e-st-Szd" firstAttribute="top" secondItem="zmY-5M-MWy" secondAttribute="bottom" constant="15" id="B8D-RF-foI"/>
                             <constraint firstAttribute="centerX" secondItem="VyI-ii-gXd" secondAttribute="centerX" id="DxO-PB-s7T"/>
                             <constraint firstAttribute="centerY" secondItem="k4F-ma-EsY" secondAttribute="centerY" id="Jwv-dx-3vC"/>
                             <constraint firstAttribute="centerX" secondItem="zmY-5M-MWy" secondAttribute="centerX" id="Kpd-e1-Opp"/>
                             <constraint firstItem="frN-kK-ejz" firstAttribute="leading" secondItem="udC-M9-PpW" secondAttribute="leadingMargin" constant="-20" id="MJf-5d-QXi"/>
-                            <constraint firstItem="4Kx-TT-EZl" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" id="MhX-fc-27v"/>
+                            <constraint firstItem="4Kx-TT-EZl" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" constant="-5" id="MhX-fc-27v"/>
                             <constraint firstItem="6dV-xY-4Hl" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" id="N1d-Fg-y1K"/>
                             <constraint firstAttribute="centerX" secondItem="k4F-ma-EsY" secondAttribute="centerX" id="RR4-H0-neL"/>
                             <constraint firstItem="Xh8-6s-Yms" firstAttribute="leading" secondItem="udC-M9-PpW" secondAttribute="leadingMargin" constant="-50" id="TAc-Qd-1He"/>
@@ -286,7 +286,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Xh8-6s-Yms" secondAttribute="trailing" constant="-50" id="VmE-oR-dDZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LPs-x8-BqM" secondAttribute="trailing" constant="-60" id="Vo9-TT-zu1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="O4z-Z7-dmj" secondAttribute="trailing" constant="-20" id="Wfh-v5-8cv"/>
-                            <constraint firstItem="frN-kK-ejz" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" constant="-10" id="XPc-RN-O1V"/>
+                            <constraint firstItem="frN-kK-ejz" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" constant="-12" id="XPc-RN-O1V"/>
                             <constraint firstAttribute="centerX" secondItem="4Kx-TT-EZl" secondAttribute="centerX" id="Xm9-M5-QWb"/>
                             <constraint firstItem="Nax-Og-iwq" firstAttribute="leading" secondItem="udC-M9-PpW" secondAttribute="leading" id="YhR-SO-m9f"/>
                             <constraint firstItem="luU-8i-1AS" firstAttribute="leading" secondItem="udC-M9-PpW" secondAttribute="leadingMargin" id="aeg-gz-hyD"/>
