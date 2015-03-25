@@ -40,6 +40,8 @@ class MasterViewController: UIViewController {
     var BlackSecond:Int = 0
     var BlackMinute:Int = 0
     
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         resetTime()
@@ -47,10 +49,6 @@ class MasterViewController: UIViewController {
         WhiteEndTurnButton.hidden = true
         BlackEndTurnButton.hidden = true
         setUpBackground()
-    }
-    
-    var backgroundView: CALayer {
-        return BackgroundView.layer
     }
     
     // Helper for using hex value with UIColor
@@ -74,8 +72,6 @@ class MasterViewController: UIViewController {
     }
     
     func setUpBackground() {
-        backgroundView.frame = CGRect(x: 0, y: 0, width: 320, height: 65)
-        backgroundView.backgroundColor = UIColorFromRGB(0x2d2d2d).CGColor
         self.miniWhiteMinuteLabel.alpha = 0
         self.miniWhiteSecondLabel.alpha = 0
         self.miniWhiteLabelColon.alpha = 0
@@ -83,11 +79,13 @@ class MasterViewController: UIViewController {
         self.BlackMinuteLabel.alpha = 0
         self.BlackLabelColon.alpha = 0
         self.BlackPauseBtn.alpha = 0
+        println("background set")
     }
     
     func BlackTurnEnd() {
         UIView.animateWithDuration(0.5, animations: {
-            self.backgroundView.frame = CGRect(x: 0, y: 0, width: 320, height: 60)
+            self.heightConstraint.constant = 60
+            self.view.layoutIfNeeded()
             self.miniBlackMinuteLabel.alpha = 1
             self.miniBlackSecondLabel.alpha = 1
             self.miniBlackLabelColon.alpha = 1
@@ -102,12 +100,14 @@ class MasterViewController: UIViewController {
             self.miniWhiteLabelColon.alpha = 0
             self.whitePauseBtn.alpha = 1
             self.BlackPauseBtn.alpha = 0
+            println("black turn ended")
         })
     }
     
     func WhiteTurnEnd() {
         UIView.animateWithDuration(0.5, animations: {
-            self.backgroundView.frame = CGRect(x: 0, y: 0, width: 320, height: 503)
+            self.heightConstraint.constant = 1000
+            self.view.layoutIfNeeded()
             self.miniWhiteMinuteLabel.alpha = 1
             self.miniWhiteSecondLabel.alpha = 1
             self.miniWhiteLabelColon.alpha = 1
@@ -162,7 +162,6 @@ class MasterViewController: UIViewController {
                 WhiteSecondLabel.text = "0" + String(second)
                 WhiteSecondLabelBlack.text = "0" + String(second)
                 miniWhiteSecondLabel.text = "0" + String(second)
-             println(second)
             default:
                 second--
                 WhiteMinuteLabel.text = String(minute)
@@ -171,7 +170,6 @@ class MasterViewController: UIViewController {
                 WhiteSecondLabel.text = String(second)
                 WhiteSecondLabelBlack.text = String(second)
                 miniWhiteSecondLabel.text = String(second)
-            println(second)
             
         }
         if minute == 0 && second == 0 {
