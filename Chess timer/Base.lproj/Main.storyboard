@@ -17,23 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6dV-xY-4Hl" userLabel="Animated switch turn bk">
-                                <rect key="frame" x="0.0" y="0.0" width="556" height="62"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dV-xY-4Hl" userLabel="Animated switch turn bk">
+                                <rect key="frame" x="-4" y="0.0" width="1200" height="60"/>
                                 <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1200" id="WCN-Zc-6fq"/>
                                     <constraint firstAttribute="height" constant="60" id="g80-GU-KYG"/>
                                 </constraints>
                             </view>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LPs-x8-BqM" userLabel="White bottom stripe">
-                                <rect key="frame" x="0.0" y="540" width="393" height="70"/>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPs-x8-BqM" userLabel="White bottom stripe">
+                                <rect key="frame" x="-34" y="540" width="678" height="60"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HUL-vc-c3D"/>
                                 </constraints>
                             </view>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xh8-6s-Yms" userLabel="Black top stripe">
-                                <rect key="frame" x="-73" y="0.0" width="393" height="70"/>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xh8-6s-Yms" userLabel="Black top stripe">
+                                <rect key="frame" x="-34" y="0.0" width="668" height="60"/>
                                 <color key="backgroundColor" red="0.17647058823529413" green="0.17647058823529413" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="oQX-e7-lRR"/>
@@ -57,8 +57,8 @@
                                     <action selector="WhiteEndTurn:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="lCp-IX-f4c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnP-Zo-tf9" userLabel="White's pause button">
-                                <rect key="frame" x="275" y="10" width="35" height="35"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnP-Zo-tf9" userLabel="White's pause button">
+                                <rect key="frame" x="549" y="10" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="jbi-Vb-fNq"/>
                                     <constraint firstAttribute="width" constant="35" id="mGh-wr-X7E"/>
@@ -83,8 +83,8 @@
                                     <action selector="showActionSheet:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="o1M-yZ-hIA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-Og-iwq">
-                                <rect key="frame" x="0.0" y="60" width="320" height="509"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-Og-iwq">
+                                <rect key="frame" x="0.0" y="125" width="600" height="444"/>
                                 <state key="normal" title="Tap to start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -92,8 +92,8 @@
                                     <action selector="startbuttonTapped:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="Ty6-Pq-EQ5"/>
                                 </connections>
                             </button>
-                            <view contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frN-kK-ejz" userLabel="Black's opponent timer">
-                                <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="frN-kK-ejz" userLabel="Black's opponent timer">
+                                <rect key="frame" x="-4" y="-12" width="110" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-6V-jpy">
                                         <rect key="frame" x="62" y="21" width="25" height="20"/>
@@ -125,8 +125,8 @@
                                     <constraint firstAttribute="width" constant="110" id="g0e-3M-XCE"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Kx-TT-EZl" userLabel="Black's mini timer">
-                                <rect key="frame" x="112" y="0.0" width="122" height="62"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Kx-TT-EZl" userLabel="Black's mini timer">
+                                <rect key="frame" x="239" y="-4" width="122" height="62"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1n-kr-OJX">
                                         <rect key="frame" x="58" y="20" width="6" height="21"/>
@@ -152,8 +152,8 @@
                                     <constraint firstAttribute="height" constant="62" id="f9o-yr-qOS"/>
                                 </constraints>
                             </view>
-                            <view contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4z-Z7-dmj" userLabel="White's opponent timer">
-                                <rect key="frame" x="210" y="496" width="110" height="75"/>
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="O4z-Z7-dmj" userLabel="White's opponent timer">
+                                <rect key="frame" x="494" y="533" width="110" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udb-sk-49o">
                                         <rect key="frame" x="25" y="38" width="25" height="20"/>
@@ -185,8 +185,8 @@
                                     <constraint firstAttribute="height" constant="75" id="aQz-UI-hbc"/>
                                 </constraints>
                             </view>
-                            <view userInteractionEnabled="NO" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4F-ma-EsY" userLabel="White main timer">
-                                <rect key="frame" x="64" y="200" width="182" height="90"/>
+                            <view userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="k4F-ma-EsY" userLabel="White main timer">
+                                <rect key="frame" x="209" y="255" width="182" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="White Minute Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-jZ-hg3">
                                         <rect key="frame" x="20" y="20" width="56" height="50"/>
@@ -212,8 +212,8 @@
                                     <constraint firstAttribute="height" constant="90" id="Rwk-xM-HZi"/>
                                 </constraints>
                             </view>
-                            <view contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VyI-ii-gXd" userLabel="Black main timer">
-                                <rect key="frame" x="74" y="200" width="182" height="90"/>
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="VyI-ii-gXd" userLabel="Black main timer">
+                                <rect key="frame" x="209" y="255" width="182" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoS-ls-9oE">
                                         <rect key="frame" x="106" y="20" width="56" height="50"/>
@@ -239,8 +239,8 @@
                                     <constraint firstAttribute="height" constant="90" id="Xtd-2f-gj4"/>
                                 </constraints>
                             </view>
-                            <view contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmY-5M-MWy" userLabel="White's mini timer">
-                                <rect key="frame" x="110" y="524" width="90" height="25"/>
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="zmY-5M-MWy" userLabel="White's mini timer">
+                                <rect key="frame" x="255" y="560" width="90" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w31-7M-O0m">
                                         <rect key="frame" x="3" y="2" width="30" height="20"/>
@@ -278,7 +278,7 @@
                             <constraint firstAttribute="centerY" secondItem="k4F-ma-EsY" secondAttribute="centerY" id="Jwv-dx-3vC"/>
                             <constraint firstAttribute="centerX" secondItem="zmY-5M-MWy" secondAttribute="centerX" id="Kpd-e1-Opp"/>
                             <constraint firstItem="frN-kK-ejz" firstAttribute="leading" secondItem="udC-M9-PpW" secondAttribute="leadingMargin" constant="-20" id="MJf-5d-QXi"/>
-                            <constraint firstItem="4Kx-TT-EZl" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" constant="-5" id="MhX-fc-27v"/>
+                            <constraint firstItem="4Kx-TT-EZl" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" constant="-4" id="MhX-fc-27v"/>
                             <constraint firstItem="6dV-xY-4Hl" firstAttribute="top" secondItem="udC-M9-PpW" secondAttribute="topMargin" id="N1d-Fg-y1K"/>
                             <constraint firstAttribute="centerX" secondItem="k4F-ma-EsY" secondAttribute="centerX" id="RR4-H0-neL"/>
                             <constraint firstItem="Xh8-6s-Yms" firstAttribute="leading" secondItem="udC-M9-PpW" secondAttribute="leadingMargin" constant="-50" id="TAc-Qd-1He"/>
@@ -302,6 +302,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="bKS-XF-QZJ"/>
                                 <exclude reference="can-2n-pBu"/>
                             </mask>
                         </variation>
