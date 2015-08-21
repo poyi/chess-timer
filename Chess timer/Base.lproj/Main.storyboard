@@ -39,24 +39,6 @@
                                     <constraint firstAttribute="height" constant="60" id="oQX-e7-lRR"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-h7-6UQ" userLabel="Black tap zone to switch">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="BlackEndTurn:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="acf-p7-UGz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQJ-G3-VxF" userLabel="White tap zone to switch">
-                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="WhiteEndTurn:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="lCp-IX-f4c"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnP-Zo-tf9" userLabel="White's pause button">
                                 <rect key="frame" x="549" y="10" width="35" height="35"/>
                                 <constraints>
@@ -81,15 +63,6 @@
                                 </state>
                                 <connections>
                                     <action selector="showActionSheet:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="o1M-yZ-hIA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-Og-iwq">
-                                <rect key="frame" x="0.0" y="125" width="600" height="444"/>
-                                <state key="normal" title="Tap to start">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="startbuttonTapped:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="Ty6-Pq-EQ5"/>
                                 </connections>
                             </button>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="frN-kK-ejz" userLabel="Black's opponent timer">
@@ -239,6 +212,33 @@
                                     <constraint firstAttribute="height" constant="90" id="Xtd-2f-gj4"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQJ-G3-VxF" userLabel="White tap zone to switch">
+                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="WhiteEndTurn:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="lCp-IX-f4c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-h7-6UQ" userLabel="Black tap zone to switch">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BlackEndTurn:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="acf-p7-UGz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-Og-iwq">
+                                <rect key="frame" x="0.0" y="125" width="600" height="444"/>
+                                <state key="normal" title="Tap to start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startbuttonTapped:" destination="L9W-Sh-Vjb" eventType="touchUpInside" id="Ty6-Pq-EQ5"/>
+                                </connections>
+                            </button>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="zmY-5M-MWy" userLabel="White's mini timer">
                                 <rect key="frame" x="255" y="560" width="90" height="25"/>
                                 <subviews>

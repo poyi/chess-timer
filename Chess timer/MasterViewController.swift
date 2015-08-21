@@ -259,7 +259,103 @@ class MasterViewController: UIViewController {
     @IBAction func showActionSheet(sender: AnyObject) {
         self.timer?.invalidate()
         let optionMenu = UIAlertController(title: nil, message: "Game Paused", preferredStyle: .ActionSheet)
-        
+        let reset30 = UIAlertAction(title: "New 30 Minutes Game", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            
+            self.StartButton.hidden = false
+            
+            self.BlackTurnEnd()
+            self.minute = 30
+            self.second = 0
+            self.BlackMinute = 30
+            self.BlackSecond = 0
+            if self.second == 0 {
+                self.WhiteSecondLabel.text = "00"
+                self.WhiteSecondLabelBlack.text = "00"
+                self.miniWhiteSecondLabel.text = "00"
+                self.BlackSecondLabel.text = "00"
+                self.BlackSecondLabelWhite.text = "00"
+                self.miniBlackSecondLabel.text = "00"
+            } else {
+                self.WhiteSecondLabel.text = String(self.second)
+                self.WhiteSecondLabelBlack.text = String(self.second)
+                self.miniWhiteSecondLabel.self.text = String(self.second)
+                self.BlackSecondLabel.text = String(self.second)
+                self.BlackSecondLabelWhite.text = String(self.second)
+                self.miniBlackSecondLabel.text = String(self.second)
+            }
+            self.WhiteMinuteLabel.text = String(self.minute)
+            self.WhiteMinuteLabelBlack.text = String(self.minute)
+            self.miniWhiteMinuteLabel.text = String(self.minute)
+            self.BlackMinuteLabel.text = String(self.minute)
+            self.BlackMinuteLabelWhite.text = String(self.minute)
+            self.miniBlackMinuteLabel.text = String(self.minute)
+        })
+        let reset20 = UIAlertAction(title: "New 20 Minutes Game", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            
+            self.StartButton.hidden = false
+            
+            self.BlackTurnEnd()
+            self.minute = 20
+            self.second = 0
+            self.BlackMinute = 20
+            self.BlackSecond = 0
+            if self.second == 0 {
+                self.WhiteSecondLabel.text = "00"
+                self.WhiteSecondLabelBlack.text = "00"
+                self.miniWhiteSecondLabel.text = "00"
+                self.BlackSecondLabel.text = "00"
+                self.BlackSecondLabelWhite.text = "00"
+                self.miniBlackSecondLabel.text = "00"
+            } else {
+                self.WhiteSecondLabel.text = String(self.second)
+                self.WhiteSecondLabelBlack.text = String(self.second)
+                self.miniWhiteSecondLabel.self.text = String(self.second)
+                self.BlackSecondLabel.text = String(self.second)
+                self.BlackSecondLabelWhite.text = String(self.second)
+                self.miniBlackSecondLabel.text = String(self.second)
+            }
+            self.WhiteMinuteLabel.text = String(self.minute)
+            self.WhiteMinuteLabelBlack.text = String(self.minute)
+            self.miniWhiteMinuteLabel.text = String(self.minute)
+            self.BlackMinuteLabel.text = String(self.minute)
+            self.BlackMinuteLabelWhite.text = String(self.minute)
+            self.miniBlackMinuteLabel.text = String(self.minute)
+        })
+        let reset15 = UIAlertAction(title: "New 15 Minutes Game", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            
+            self.StartButton.hidden = false
+            
+            self.BlackTurnEnd()
+            self.minute = 15
+            self.second = 0
+            self.BlackMinute = 15
+            self.BlackSecond = 0
+            if self.second == 0 {
+                self.WhiteSecondLabel.text = "00"
+                self.WhiteSecondLabelBlack.text = "00"
+                self.miniWhiteSecondLabel.text = "00"
+                self.BlackSecondLabel.text = "00"
+                self.BlackSecondLabelWhite.text = "00"
+                self.miniBlackSecondLabel.text = "00"
+            } else {
+                self.WhiteSecondLabel.text = String(self.second)
+                self.WhiteSecondLabelBlack.text = String(self.second)
+                self.miniWhiteSecondLabel.self.text = String(self.second)
+                self.BlackSecondLabel.text = String(self.second)
+                self.BlackSecondLabelWhite.text = String(self.second)
+                self.miniBlackSecondLabel.text = String(self.second)
+            }
+            self.WhiteMinuteLabel.text = String(self.minute)
+            self.WhiteMinuteLabelBlack.text = String(self.minute)
+            self.miniWhiteMinuteLabel.text = String(self.minute)
+            self.BlackMinuteLabel.text = String(self.minute)
+            self.BlackMinuteLabelWhite.text = String(self.minute)
+            self.miniBlackMinuteLabel.text = String(self.minute)
+        })
+
         let reset10 = UIAlertAction(title: "New 10 Minutes Game", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
             
@@ -291,9 +387,40 @@ class MasterViewController: UIViewController {
             self.BlackMinuteLabel.text = String(self.minute)
             self.BlackMinuteLabelWhite.text = String(self.minute)
             self.miniBlackMinuteLabel.text = String(self.minute)
-            
-            println("10 min game restarted")
         })
+        let reset7 = UIAlertAction(title: "New 7 Minutes Game", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            
+            self.StartButton.hidden = false
+            
+            self.BlackTurnEnd()
+            self.minute = 7
+            self.second = 0
+            self.BlackMinute = 7
+            self.BlackSecond = 0
+            if self.second == 0 {
+                self.WhiteSecondLabel.text = "00"
+                self.WhiteSecondLabelBlack.text = "00"
+                self.miniWhiteSecondLabel.text = "00"
+                self.BlackSecondLabel.text = "00"
+                self.BlackSecondLabelWhite.text = "00"
+                self.miniBlackSecondLabel.text = "00"
+            } else {
+                self.WhiteSecondLabel.text = String(self.second)
+                self.WhiteSecondLabelBlack.text = String(self.second)
+                self.miniWhiteSecondLabel.self.text = String(self.second)
+                self.BlackSecondLabel.text = String(self.second)
+                self.BlackSecondLabelWhite.text = String(self.second)
+                self.miniBlackSecondLabel.text = String(self.second)
+            }
+            self.WhiteMinuteLabel.text = String(self.minute)
+            self.WhiteMinuteLabelBlack.text = String(self.minute)
+            self.miniWhiteMinuteLabel.text = String(self.minute)
+            self.BlackMinuteLabel.text = String(self.minute)
+            self.BlackMinuteLabelWhite.text = String(self.minute)
+            self.miniBlackMinuteLabel.text = String(self.minute)
+        })
+
         let reset5 = UIAlertAction(title: "New 5 Minutes Game", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
   
@@ -339,7 +466,11 @@ class MasterViewController: UIViewController {
             }
                    })
         
+        optionMenu.addAction(reset30)
+        optionMenu.addAction(reset20)
+        optionMenu.addAction(reset15)
         optionMenu.addAction(reset10)
+        optionMenu.addAction(reset7)
         optionMenu.addAction(reset5)
         optionMenu.addAction(cancelAction)
         
